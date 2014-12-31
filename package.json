@@ -1,6 +1,6 @@
 {
   "name": "recoil",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Mock properties on global objects across a `require` call.",
   "author": "Lim Yuan Qing",
   "license": "MIT",
