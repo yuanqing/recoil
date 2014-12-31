@@ -1,7 +1,7 @@
 {
   "name": "recoil",
   "version": "0.0.0",
-  "description": "Unset methods on global objects across a require call.",
+  "description": "Mock properties on global objects across a `require` call.",
   "author": "Lim Yuan Qing",
   "license": "MIT",
   "repository": {
@@ -27,6 +27,8 @@
     "globals",
     "mock",
     "polyfill",
+    "properties",
+    "property",
     "require",
     "stub",
     "test"

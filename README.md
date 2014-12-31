@@ -4,7 +4,7 @@
 
 ## Usage
 
-A use case is to **test a polyfill**. Consider `foo.js`:
+A use case is to test a polyfill. Consider `foo.js`:
 
 ```js
 // foo.js
@@ -20,8 +20,6 @@ To get at the `polyfill` string of `isArray`, do:
 ```js
 // 1.js
 
-var recoil = require('..');
-
 var opts = { obj: Array, key: 'isArray', val: null };
 var foo = recoil('./foo.js', opts);
 
@@ -31,7 +29,7 @@ console.log(foo.isArray); //=> 'polyfill'
 Recoil works as follows:
 
 1. Save the original value of `Array.isArray`, then set `Array.isArray` to `null`.
-3. `require` `./foo.js` using [require-uncached](https://github.com/sindresorhus/require-uncached).
+3. Require `./foo.js` using [require-uncached](https://github.com/sindresorhus/require-uncached).
 4. Restore `Array.isArray` to its original value.
 5. Return the result of requiring `./foo.js`.
 
